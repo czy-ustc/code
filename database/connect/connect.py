@@ -45,6 +45,8 @@ class dbConn(object):
         baseStr = "<{}(host={} port={} user={})>".format(
             self._name, host, self._port, user)
         return baseStr
+    
+    __repr__ = __str__
 
     def __getitem__(self, value):
         """
