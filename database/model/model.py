@@ -25,6 +25,8 @@ class Model(object):
             self._type, host, self._objectInfo["port"], user,
             str(self._objectInfo["info"]), self._name)
         return baseStr
+    
+    __repr__ = __str__
 
 
 class Pair(Model):
