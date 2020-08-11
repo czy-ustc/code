@@ -42,6 +42,8 @@ class dbObject(object):
         baseStr = "<{}(host={} port={} user={} db={})>".format(
             self._name, host, self._port, user, str(self._info))
         return baseStr
+    
+    __repr__ = __str__
 
     def __getitem__(self, key: str):
         """
